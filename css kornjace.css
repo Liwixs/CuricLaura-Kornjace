@@ -56,7 +56,7 @@ ol{
 
 span{
 	font-weight: bold;
-	color: hotpink;
+	color: chocolate;
 }
 
 legend{
@@ -103,4 +103,42 @@ input:focus {
 
 button:active {
   background-color: darkred;
+}
+
+
+table{
+	border: 10px outset darkgreen;
+	width: 700px;
+	height: 300px;
+	border-radius: 10px; 
+	border-collapse:separate;
+	padding: 10px;
+	margin: 40px;
+
+}
+
+td{
+	font-family: "oldenburg";
+}
+
+th, td {
+  	border: 1px solid #39200C;
+  	padding: 10px;
+  	text-align: center;
+}
+
+thead {
+	
+  	background-color: chocolate;
+	font-family: 'Bungee Regular';
+	font-size: 17px;
+	color:#5A340E; 
+}
+
+tbody tr:nth-child(odd){
+  	background-color:#F5D6A7;
+}
+
+tbody tr:nth-child(even){
+  	background-color:#C0DCBE;
 }
