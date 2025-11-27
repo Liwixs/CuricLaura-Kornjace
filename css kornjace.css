@@ -3,29 +3,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-body{
-	background-color: antiquewhite;
-}
-
 .bungee-regular {
   font-family: "Bungee", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+.oldenburg-regular {
+  font-family: "Oldenburg", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body{
+	background-color: antiquewhite;
+}
+
+
+h1, h2, thread, button {
+    font-family: "Bungee";
+}
+
+p, p2, ul, ol, td, label, input, select {
+    font-family: "Oldenburg";
+}
+
 h1 {
-	font-family: "Bungee";
 	font-weight: 200;
 	font-style: normal;
 	color: #5B371B;
-	background-color: chocolate;
+	background:linear-gradient(chocolate, saddlebrown);
 	padding-bottom: 10px;
-	text-align: center;
-	
+	text-align: center;	
 }
 
-p {
-	font-family:"Oldenburg"; 
+h2{
+	color:darkgreen;
+}
+
+p { 
 	font-weight: 100;
 	font-style: normal;
 	color:antiquewhite;
@@ -37,21 +55,18 @@ p {
 
 p2{
 	background-color: burlywood;
-	font-family:"Oldenburg";
 }
 
 ul{
 	background-color:white;
 	list-style:square;
 	list-style-position: inside;
-	font-family:"Oldenburg";
 }
 
 ol{
 	background-color:white;
 	list-style:lower-roman; 
 	list-style-position: inside;
-	font-family:"Oldenburg";
 }
 
 span{
@@ -62,38 +77,16 @@ span{
 legend{
 	font-size: 40px;
 	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	background-color:tan;
+	background-color:#96B792;
 	padding: 20px;
 	color:darkgreen;
 }
 
-h2{
-	color:darkgreen;
-	font-family: "Bungee Regular";
-}
-
-.oldenburg-regular {
-  font-family: "Oldenburg", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 label{
 	font-size: 18px;
-	font-family:"Oldenburg";
 	background-color:darkgreen;
 	padding: 5px;
 	color:wheat;
-}
-
-button{
-	font-size: 25px;
-}
-
-button:hover {
-  background-color: chocolate;
-  color: wheat;
-  font-size: 28px; 
 }
 
 input:focus {
@@ -101,10 +94,21 @@ input:focus {
   outline: none;
 }
 
-button:active {
-  background-color: darkred;
+input, select {
+	padding: 10px;
+	border-radius: 8px;
+	border: 2px solid #5B371B;
+	margin-top: 5px;
+	width: 60%;
 }
 
+input[name="vrsta"],input[name="mjesto"] {
+    border: 2px solid chocolate;
+}
+
+select[name="zivotinja"],select[name="hrana"] {
+	border: 2px solid chocolate;
+}
 
 table{
 	border: 10px outset darkgreen;
@@ -113,12 +117,8 @@ table{
 	border-radius: 10px; 
 	border-collapse:separate;
 	padding: 10px;
-	margin: 40px;
+	margin: 40px auto;
 
-}
-
-td{
-	font-family: "oldenburg";
 }
 
 th, td {
@@ -128,17 +128,38 @@ th, td {
 }
 
 thead {
-	
   	background-color: chocolate;
-	font-family: 'Bungee Regular';
 	font-size: 17px;
 	color:#5A340E; 
 }
 
+
+button {
+	background-color: chocolate;
+	color: white;
+	padding: 12px;
+	border: none;
+	border-radius: 10px;
+	font-size: 24px;
+}
+
+button:hover {
+	background-color: #b05a1e;
+}
+
+button:active {
+	background-color: #7a3d12;
+}
+
+
 tbody tr:nth-child(odd){
-  	background-color:#F5D6A7;
+	background-color:#F5D6A7;
 }
 
 tbody tr:nth-child(even){
-  	background-color:#C0DCBE;
+	background-color:#C0DCBE;
+}
+
+form label {
+	display: block;
 }
