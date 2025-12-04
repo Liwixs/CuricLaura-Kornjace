@@ -16,9 +16,9 @@
 }
 
 
-
 body{
 	background-color: antiquewhite;
+	background-image: url("slike/pozadina.avif");
 }
 
 
@@ -32,6 +32,7 @@ p, p2, ul, ol, td, label, input, select {
 
 h1 {
 	font-weight: 200;
+	font-size: 50px;
 	font-style: normal;
 	color: #5B371B;
 	background:linear-gradient(chocolate, saddlebrown);
@@ -40,7 +41,13 @@ h1 {
 }
 
 h2{
-	color:darkgreen;
+	color:darkolivegreen;
+	background-color:#ECB473;
+	display: inline;
+	font-size: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
 }
 
 p { 
@@ -54,17 +61,21 @@ p {
 }
 
 p2{
-	background-color: burlywood;
+	color:darkolivegreen;
+	background-color:#ECB473;
+	display: inline;
 }
 
 ul{
-	background-color:white;
+	color:antiquewhite;
+	background-color: darkgreen;
 	list-style:square;
 	list-style-position: inside;
 }
 
 ol{
-	background-color:white;
+	color:antiquewhite;
+	background-color: darkgreen;
 	list-style:lower-roman; 
 	list-style-position: inside;
 }
@@ -85,8 +96,8 @@ legend{
 label{
 	font-size: 18px;
 	background-color:darkgreen;
-	padding: 5px;
 	color:wheat;
+	padding: 5px;
 }
 
 input:focus {
@@ -162,4 +173,66 @@ tbody tr:nth-child(even){
 
 form label {
 	display: block;
+}
+
+a{
+	font-family: "Oldenburg Regular";
+	font-size: 24px;
+	font-weight: 600;
+	padding:20px;
+	border-radius: 10px;
+	background-color:rgba(239,189,155,0.50)
+}
+
+
+@media (max-width: 768px) {
+
+p, ul, ol {
+padding: 15px;
+font-size: 16px;
+}
+  
+h1 {
+font-size: 35px;
+}
+
+h2 {
+font-size: 24px;
+display: inline-block;
+margin-bottom: 10px;
+}
+    
+img, iframe, object {
+width: 100%;
+height: auto;
+}
+
+   
+input, select {
+width: 90%;
+font-size: 16px;
+}
+
+    
+table {
+width: 100%;
+display: block;
+}
+
+   
+fieldset {
+padding: 10px;
+}
+
+label {
+font-size: 16px;
+display: block;
+}
+
+button {
+width: 80%;
+font-size: 20px;
+padding: 10px;
+}
+
 }
