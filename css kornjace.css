@@ -17,8 +17,8 @@
 
 
 body{
-	background-color: antiquewhite;
 	background-image: url("slike/pozadina.avif");
+	margin: 0;
 }
 
 
@@ -26,7 +26,7 @@ h1, h2, thread, button {
     font-family: "Bungee";
 }
 
-p, p2, ul, ol, td, label, input, select {
+p, p2, ul, ol, td, label, input, select, a {
     font-family: "Oldenburg";
 }
 
@@ -45,52 +45,91 @@ h2{
 	background-color:#ECB473;
 	display: inline;
 	font-size: 30px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px;
 	border-radius: 5px;
+	margin-top: 20px;
+}
+
+p, ul, ol{
+	color:antiquewhite;
+	background-color: darkgreen;
+	padding: 30px;
 }
 
 p { 
 	font-weight: 100;
 	font-style: normal;
-	color:antiquewhite;
-	background-color: darkgreen;
-	padding: 30px;
 	display:block;
-	float:inherit;
+	float:none;
+	clear:both;
 }
 
 p2{
+	font-size: 20px;
 	color:darkolivegreen;
 	background-color:#ECB473;
-	display: inline;
+	display: block;
+	margin: 20px auto;
 }
 
 ul{
-	color:antiquewhite;
-	background-color: darkgreen;
 	list-style:square;
 	list-style-position: inside;
 }
 
 ol{
-	color:antiquewhite;
-	background-color: darkgreen;
 	list-style:lower-roman; 
 	list-style-position: inside;
 }
+
 
 span{
 	font-weight: bold;
 	color: chocolate;
 }
 
-legend{
+video[src] {
+	border-radius: 10px;
+}
+
+img[alt] {
+	border-radius: 10px;
+}
+
+iframe[src] {
+	border:5px solid darkgreen;
+}
+
+object[type="image/gif"] {
+	display: block;
+	margin: 20px auto;
+}
+
+input[type="text"] {
+	background-color: #fff8ee;
+}
+
+table[id="kornjace"] {
+	margin: 40px auto;
+}
+
+form label {
+	display:block;
+}
+
+form h2 {
+	text-align: left;
+}
+
+fieldset, legend{
 	font-size: 40px;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
-	background-color:#96B792;
-	padding: 20px;
+	background-color: #96b792;
+	padding:20px;
 	color:darkgreen;
+}
+
+legend{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
 }
 
 label{
@@ -124,18 +163,9 @@ select[name="zivotinja"],select[name="hrana"] {
 table{
 	border: 10px outset darkgreen;
 	width: 700px;
-	height: 300px;
 	border-radius: 10px; 
 	border-collapse:separate;
 	padding: 10px;
-	margin: 40px auto;
-
-}
-
-th, td {
-  	border: 1px solid #39200C;
-  	padding: 10px;
-  	text-align: center;
 }
 
 thead {
@@ -144,21 +174,28 @@ thead {
 	color:#5A340E; 
 }
 
+th, td {
+  	border: 1px solid #39200C;
+  	padding: 10px;
+  	text-align: center;
+	vertical-align: middle;
+}
 
-button {
+button[type="submit"] {
 	background-color: chocolate;
 	color: white;
 	padding: 12px;
 	border: none;
 	border-radius: 10px;
 	font-size: 24px;
+	cursor: pointer;
 }
 
-button:hover {
+button[type="submit"]:hover {
 	background-color: #b05a1e;
 }
 
-button:active {
+button[type="submit"]:active {
 	background-color: #7a3d12;
 }
 
@@ -171,17 +208,16 @@ tbody tr:nth-child(even){
 	background-color:#C0DCBE;
 }
 
-form label {
-	display: block;
-}
-
-a{
-	font-family: "Oldenburg Regular";
+a {
 	font-size: 24px;
 	font-weight: 600;
 	padding:20px;
 	border-radius: 10px;
 	background-color:rgba(239,189,155,0.50)
+}
+
+a:hover {
+	color: rgba(112,112,200,1.00);
 }
 
 
@@ -217,11 +253,6 @@ font-size: 16px;
 table {
 width: 100%;
 display: block;
-}
-
-   
-fieldset {
-padding: 10px;
 }
 
 label {
