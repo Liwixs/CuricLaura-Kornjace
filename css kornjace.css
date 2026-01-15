@@ -238,8 +238,42 @@ a:hover {
 	color: rgba(112,112,200,1.00);
 }
 
+@keyframes puls {
+	0% {
+		color:#5b371b;
+		transform:scale(1,1);
+	}
+	50%{
+		color:darkgreen;
+		transform: scale(1.1,1.1);
+	}
+	100%{
+		color:#5b371b;
+		transform: scale(1,1);
+	}	
+}
 
-@media (max-width: 768px) {
+#tema .okvir.izdvojeno{
+	animation: puls 2s infinite;
+}
+
+#tema > h1 {
+	letter-spacing: 4px;
+}
+
+h2 + p{
+	border-left: 6px solid chocolate;
+}
+
+.slatkovodna ~ p2{
+	font-weight:400;
+}
+
+img:nth-of-type(odd){
+	border: 6px solid chocolate;
+}
+
+@media (max-width: 768px){
 
 p, ul, ol {
 padding: 15px;
